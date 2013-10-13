@@ -1,0 +1,21 @@
+{
+  "name": "ng2Loading",
+  "repo": "ng2/loading",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "config.js",
+    "services/interceptor.js",
+    "directives/loading-curtain.js",
+    "views/loading-curtain.js"
+  ],
+  "styles": [
+    "styles/curtain.css"
+  ]
+}
