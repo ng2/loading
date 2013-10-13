@@ -15,8 +15,12 @@ angular.module('ng2Loading')
       replace: true,
       link: function(scope, element, attr) {
         $rootScope.$on('ng2loading:request', function (event, data) {
-          element.addClass('show')
+          element.addClass('curtain-show');
         });
+
+        $rootScope.$on('ng2loading:response', function (event, data) {
+          element.removeClass('curtain-show');
+        })
       }
     };
   }

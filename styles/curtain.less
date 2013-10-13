@@ -1,15 +1,58 @@
-@base: #f938ab;
+.curtan {
+  display: none;
+  opacity: 0;
+}
 
-.box-shadow(@style, @c) when (iscolor(@c)) {
-  box-shadow:         @style @c;
-  -webkit-box-shadow: @style @c;
-  -moz-box-shadow:    @style @c;
+.curtain-show {
+  -webkit-animation: 1s curtain-fade-in;
+  -moz-animation: 1s curtain-fade-in;
+  -o-animation: 1s curtain-fade-in;
+  animation: 1s curtain-fade-in;
 }
-.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
-  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+
+.curtain-fade-in () {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    display: block;
+    -webkit-animation-play-state: pause;
+    -moz-animation-play-state: pause;
+    -o-animation-play-state: pause;
+    // animation-play-state: pause;
+  }
 }
-.box { 
-  color: saturate(@base, 5%);
-  border-color: lighten(@base, 30%);
-  div { .box-shadow(0 0 5px, 30%) }
+
+@-webkit-keyframes curtain-fade-in { .curtain-fade-in; }
+@-moz-keyframes curtain-fade-in { .curtain-fade-in; }
+@-o-keyframes curtain-fade-in { .curtain-fade-in; }
+@keyframes curtain-fade-in { .curtain-fade-in; }
+
+.curtain-hide {
+  -webkit-animation: 1s curtain-fade-out;
+  -moz-animation: 1s curtain-fade-out;
+  -o-animation: 1s curtain-fade-out;
+  animation: 1s curtain-fade-out;
 }
+
+.curtain-fade-out () {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    display: none !important;
+    -webkit-animation-play-state: pause;
+    -moz-animation-play-state: pause;
+    -o-animation-play-state: pause;
+    // animation-play-state: pause;
+  }
+}
+
+@-webkit-keyframes curtain-fade-out { .curtain-fade-out; }
+@-moz-keyframes curtain-fade-out { .curtain-fade-out; }
+@-o-keyframes curtain-fade-out { .curtain-fade-out; }
+@keyframes curtain-fade-out { .curtain-fade-out; }
