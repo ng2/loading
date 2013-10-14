@@ -1,9 +1,112 @@
-.box {
-  color: #fe33ac;
-  border-color: #fdcdea;
+.curtan {
+  display: none;
+  opacity: 0;
 }
-.box div {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+.curtain-show {
+  -webkit-animation: 1s curtain-fade-in;
+  -moz-animation: 1s curtain-fade-in;
+  -o-animation: 1s curtain-fade-in;
+  animation: 1s curtain-fade-in;
+}
+@-webkit-keyframes curtain-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    display: block;
+    -webkit-animation-play-state: pause;
+    -moz-animation-play-state: pause;
+    -o-animation-play-state: pause;
+  }
+}
+@-moz-keyframes curtain-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    display: block;
+    -webkit-animation-play-state: pause;
+    -moz-animation-play-state: pause;
+    -o-animation-play-state: pause;
+  }
+}
+@-o-keyframes curtain-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    display: block;
+    -webkit-animation-play-state: pause;
+    -moz-animation-play-state: pause;
+    -o-animation-play-state: pause;
+  }
+}
+@keyframes curtain-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    display: block;
+    -webkit-animation-play-state: pause;
+    -moz-animation-play-state: pause;
+    -o-animation-play-state: pause;
+  }
+}
+.curtain-hide {
+  -webkit-animation: 1s curtain-fade-out;
+  -moz-animation: 1s curtain-fade-out;
+  -o-animation: 1s curtain-fade-out;
+  animation: 1s curtain-fade-out;
+}
+@-webkit-keyframes curtain-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none !important;
+    -webkit-animation-play-state: pause;
+    -moz-animation-play-state: pause;
+    -o-animation-play-state: pause;
+  }
+}
+@-moz-keyframes curtain-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none !important;
+    -webkit-animation-play-state: pause;
+    -moz-animation-play-state: pause;
+    -o-animation-play-state: pause;
+  }
+}
+@-o-keyframes curtain-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none !important;
+    -webkit-animation-play-state: pause;
+    -moz-animation-play-state: pause;
+    -o-animation-play-state: pause;
+  }
+}
+@keyframes curtain-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none !important;
+    -webkit-animation-play-state: pause;
+    -moz-animation-play-state: pause;
+    -o-animation-play-state: pause;
+  }
 }
