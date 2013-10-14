@@ -1,6 +1,19 @@
-.curtan {
-  display: none;
+@halfpage: 50%;
+
+.curtain {
+  display: block;
   opacity: 0;
+  height: 60px;
+  width: 100%;
+  padding: 0;
+  margin-top: 38px;
+  text-align: center;
+  position: absolute;
+
+  h3 {
+    color: whitesmoke;
+    background-color: rgba(100,100,100,0.3);
+  }
 }
 
 .curtain-show {
@@ -17,7 +30,6 @@
 
   to {
     opacity: 1;
-    display: block;
     -webkit-animation-play-state: pause;
     -moz-animation-play-state: pause;
     -o-animation-play-state: pause;
@@ -44,7 +56,6 @@
 
   to {
     opacity: 0;
-    display: none !important;
     -webkit-animation-play-state: pause;
     -moz-animation-play-state: pause;
     -o-animation-play-state: pause;

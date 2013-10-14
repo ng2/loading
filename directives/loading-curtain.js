@@ -14,13 +14,20 @@ angular.module('ng2Loading')
       restrict: 'E',
       replace: true,
       link: function(scope, element, attr) {
-        $rootScope.$on('ng2loading:request', function (event, data) {
-          element.addClass('curtain-show');
-        });
-
-        $rootScope.$on('ng2loading:response', function (event, data) {
+        var hide = function (event, data) {
           element.removeClass('curtain-show');
-        })
+          element.addClass('curtain-hide');
+        };
+
+        var show = function (event, data) {
+          element.removeClass('curtain-hide');
+          element.addClass('curtain-show');
+        }
+
+        $rootScope.$on('ng2loading:request', show);
+        $rootScope.$on('ng2loading:response', hide);
+        $rootScope.$on('ng2loading:requestError', hide);
+        $rootScope.$on('ng2loading:responseError', hide);
       }
     };
   }
