@@ -1,1 +1,1 @@
-module.exports = '<h3>Loading...</h3>';
+module.exports = '<div class="curtain">\n  <h3>Loading...</h3>\n</div>';
