@@ -10,7 +10,7 @@ Then require it in your `index.html` and add it as a dependency:
 ```js
 require('ng2-loading');
 //...
-angular.module('myApp',['ng2Loading']);
+angular.module('myApp',['ng2-loading']);
 ```
 
 ## Usage

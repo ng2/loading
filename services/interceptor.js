@@ -5,7 +5,7 @@
  * Makes sure there's a valid session and emit
  * ng2Auth:login::begin on 403
  */
-angular.module('ng2Loading')
+angular.module('ng2-loading')
 .factory('LoadingHTTPInterceptor', ['$rootScope', '$q'
 , function ($rootScope, $q) {
   return {

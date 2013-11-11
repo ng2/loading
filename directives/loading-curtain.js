@@ -4,7 +4,7 @@
  * @description
  * ...
  */
-angular.module('ng2Loading')
+angular.module('ng2-loading')
   .directive('loadingCurtain',['$rootScope', function ($rootScope) {
     'use strict';
 
