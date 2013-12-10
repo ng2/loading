@@ -20,3 +20,6 @@ It will register itself and hook up an $http interceptor that triggers `ng2loadi
 By default it includes a loading bar that goes across the page.
 
 A provider to configure different progress widgets is on the way.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ng2/loading/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
